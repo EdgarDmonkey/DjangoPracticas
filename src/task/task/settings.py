@@ -55,7 +55,7 @@ ROOT_URLCONF = "task.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ['C:\\Users\\Edgar\\Documents\\00_proyectos personales\\004_ToDo_Django\\src\\task\\base\\tamplates'],
+        "DIRS": [BASE_DIR  / "base" / "tamplates" ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
