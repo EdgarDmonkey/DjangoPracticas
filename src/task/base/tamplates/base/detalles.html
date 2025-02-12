@@ -1,0 +1,10 @@
+{% extends 'base/principal.html' %}
+
+{% block content %}
+
+<a href="{% url 'main' %}">Volver</a>
+
+<h1>Tarea: {{Tarea}}</h1>
+<h2>Descripción: {{Tarea.description}}</h2>
+
+{% endblock content %}

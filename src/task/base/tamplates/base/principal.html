@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de pendientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: #abb2b9;
+            font-family: "Roboto", serif;
+            padding-top: 60px;
+        }
+
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #5d6d7e;
+            -webkit-box-shadow: 2px 2px 13px -4px rgb(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgb(0, 0, 0, 0.21);
+            border-radius: 5px;
+        }
+
+        a,
+        p{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 3px;
+        }
+
+        .barra-superior {
+            display: flex;
+            text-decoration: none;
+            justify-content: space-between;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #b4bdc5 0%, #5d6d7e 40%, #10161d 100%);
+        }
+
+        .barra-superior input{
+            color: #101011;
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            font-family: "Work Sans", serif;
+        }
+
+        .item-tareas{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: .5px solid rgb(173, 173, 173);
+        }
+
+        .titulo-tarea{
+            display: flex;
+        }
+
+        .titulo-tarea a {
+            text-decoration: none;
+            color: #c2ccd6;
+            margin-left: 10px;
+        }
+
+        .icon-done{
+            height: 15px;
+            width: 15px;
+            background-color: #223c53;
+            border-radius: 50px;
+        }
+
+        .icon-incompleta{
+            height: 15px;
+            width: 15px;
+            background-color: #ccd1d8;
+            border-radius: 50px;
+        }
+
+        .enlace-eliminar{
+            text-decoration: none;
+            font-weight: 900;
+            color: #8f200a;
+            font-size: 12px;
+            line-height: 0;
+        }
+
+        #wrap-agregar-buscar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        #enlace-agregar{
+            color: #a5230a;
+            text-decoration: none;
+            font-size: 42px;
+            text-shadow: 1px 1px  #5a1609;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea{
+            border: 1px solid #3e4450;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .boton {
+            border:1px solid #3e4450;
+            background-color: #223c53;
+            color: #c6cbcf;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #boton-close{
+            border:1px solid #3e4450;
+            background-color: #3d4b57;
+            color: #c6cbcf;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .body-tarjetas {
+            padding: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+</html>
